@@ -1,0 +1,24 @@
+2024-02-25 10:39:51.386283: I tensorflow_serving/model_servers/server.cc:74] Building single TensorFlow model file config:  model_name: my_mnist_model model_base_path: /training_and_deploying_at_scale/my_mnist_model
+2024-02-25 10:39:51.386928: I tensorflow_serving/model_servers/server_core.cc:467] Adding/updating models.
+2024-02-25 10:39:51.387191: I tensorflow_serving/model_servers/server_core.cc:596]  (Re-)adding model: my_mnist_model
+2024-02-25 10:39:51.536449: I tensorflow_serving/core/basic_manager.cc:739] Successfully reserved resources to load servable {name: my_mnist_model version: 2}
+2024-02-25 10:39:51.537388: I tensorflow_serving/core/loader_harness.cc:66] Approving load for servable version {name: my_mnist_model version: 2}
+2024-02-25 10:39:51.537574: I tensorflow_serving/core/loader_harness.cc:74] Loading servable version {name: my_mnist_model version: 2}
+2024-02-25 10:39:51.543153: I external/org_tensorflow/tensorflow/cc/saved_model/reader.cc:83] Reading SavedModel from: /training_and_deploying_at_scale/my_mnist_model/0002
+2024-02-25 10:39:51.546763: I external/org_tensorflow/tensorflow/cc/saved_model/reader.cc:51] Reading meta graph with tags { serve }
+2024-02-25 10:39:51.546913: I external/org_tensorflow/tensorflow/cc/saved_model/reader.cc:146] Reading SavedModel debug info (if present) from: /training_and_deploying_at_scale/my_mnist_model/0002
+2024-02-25 10:39:51.548286: I external/org_tensorflow/tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-02-25 10:39:51.567726: I external/org_tensorflow/tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:382] MLIR V1 optimization pass is not enabled
+2024-02-25 10:39:51.568662: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:233] Restoring SavedModel bundle.
+2024-02-25 10:39:51.599149: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:217] Running initialization op on SavedModel bundle at path: /training_and_deploying_at_scale/my_mnist_model/0002
+2024-02-25 10:39:51.606227: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:316] SavedModel load for tags { serve }; Status: success: OK. Took 63024 microseconds.
+2024-02-25 10:39:51.607802: I tensorflow_serving/servables/tensorflow/saved_model_warmup_util.cc:80] No warmup data file found at /training_and_deploying_at_scale/my_mnist_model/0002/assets.extra/tf_serving_warmup_requests
+2024-02-25 10:39:51.654986: I tensorflow_serving/core/loader_harness.cc:95] Successfully loaded servable version {name: my_mnist_model version: 2}
+2024-02-25 10:39:51.656240: I tensorflow_serving/model_servers/server_core.cc:488] Finished adding/updating models
+2024-02-25 10:39:51.656454: I tensorflow_serving/model_servers/server.cc:118] Using InsecureServerCredentials
+2024-02-25 10:39:51.656609: I tensorflow_serving/model_servers/server.cc:383] Profiler service is enabled
+2024-02-25 10:39:51.658378: I tensorflow_serving/model_servers/server.cc:409] Running gRPC ModelServer at 0.0.0.0:8500 ...
+[warn] getaddrinfo: address family for nodename not supported
+2024-02-25 10:39:51.661131: I tensorflow_serving/model_servers/server.cc:430] Exporting HTTP/REST API at:localhost:8501 ...
+[evhttp_server.cc : 245] NET_LOG: Entering the event loop ...

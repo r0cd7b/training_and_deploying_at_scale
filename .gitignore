@@ -2,5 +2,4 @@
 .ipynb_checkpoints/
 19_training_and_deploying_at_scale.ipynb
 *.txt
-*.json
 *.py
